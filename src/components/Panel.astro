@@ -1,0 +1,14 @@
+---
+import "./Panel.scss";
+export interface Props {
+  title: string;
+  icon?: string;
+}
+
+const { title, icon } = Astro.props;
+---
+
+<div class="center">
+  <h1>{title} {icon}</h1>
+  <slot />
+</div>
